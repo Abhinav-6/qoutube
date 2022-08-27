@@ -7,7 +7,10 @@ function App() {
       <Box sx={{backgroundColor: "#000"}}>
         Navbar
         <Routes>
-          <Route path="/" element={<Feed />} />
+          <Route path="/" exact element={<Feed />} />
+          <Route path="/video/:id" element={<Feed />} />
+          <Route path="/channel/:id" element={<Feed />} />
+          <Route path="/search/:searchTerm" element={<Feed />} />
         </Routes>
       </Box>
     </BrowserRouter>
