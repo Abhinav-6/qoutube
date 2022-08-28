@@ -8,7 +8,7 @@ import VideoDetail from "./VideoDetail";
 function App() {
   return (
     <BrowserRouter>
-      <Box sx={{ backgroundColor: "#000" }}>
+      <Box sx={{ backgroundColor: "#080c24ff", color: "#ffffffff" }}>
         <Navbar />
         <Routes>
           <Route path="/" exact element={<Feed />} />
